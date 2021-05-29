@@ -4,7 +4,7 @@
 include "koneksi.php";
 
 //menerima nilai dari kiriman form pendaftaran
-$username=$_POST['username'];
+$nama=$_POST['nama'];
 $password=($_POST['password']); 
 
 
@@ -18,7 +18,7 @@ $sql = "INSERT INTO users (id, nama, jenis_kelamin, tanggal_lahir, domisili, ema
 //Kondisi apakah berhasil atau tidak
   if ($hasil) {
 	header("location:login.php");
-	$_SESSION['username'] = $username;
+	$_SESSION['nama'] = $nama;
         $_SESSION['role'] = "member";
     
         setcookie($_SESSION['username'],$username);

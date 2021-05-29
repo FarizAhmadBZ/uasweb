@@ -12,30 +12,39 @@
 <div class="container">
 <h2>Form Registrasi</h2>
 <form action="simpan_pendaftaran.php" method="post">
-        <div class="form-group">
-            <label>Username:</label>
-            <input type="text" name="username" class="form-control" placeholder="Masukan Username" />
-        </div>
 	    <div class="form-group">
             <label>Nama:</label>
             <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
         </div>
+        <div class="form-group">
+            <label>Jenis Kelamin:</label>
+            <input type="text" name="jenis kelamin" class="form-control" placeholder="Masukan Jenis Kelamin" />
+        </div>
+        <div class="form-group">
+	     <label>Tanggal Lahir:</label>
+	     <input type="date" name="tanggal lahir" class="form-control" placeholder="Masukan Tanggal Lahir" />
+	    </div> 
 	    <div class="form-group">
-	     <label>Alamat:</label>
-	     <textarea name="alamat" class="form-control" rows="5"placeholder="Masukan Alamat" ></textarea>
+	     <label>Domisili:</label>
+	     <input type="text" name="domisili" class="form-control" placeholder="Masukan Domisili" />
 	    </div> 
 	    <div class="form-group">
             <label>Email:</label>
             <input type="email" name="email" class="form-control" placeholder="Masukan Email" />
         </div>
-	    <div class="form-group">
-            <label>No HP:</label>
-            <input type="number" name="no_hp" class="form-control" placeholder="Masukan No HP" />
+        <div class="form-group">
+            <label>Link Github:</label>
+            <input type="text" name="link_github" class="form-control" placeholder="Masukan Link Github" />
         </div>
 	    <div class="form-group">
             <label>Password:</label>
             <input type="password" name="password" class="form-control" placeholder="Masukan Password" />
         </div>
+        <div class="form-group">
+            <label>Gambar:</label>
+            <input type="file" name="Gambar" class="form-control" placeholder="Masukan Gambar" />
+        </div>
+
 
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         <p> Sudah punya akun?

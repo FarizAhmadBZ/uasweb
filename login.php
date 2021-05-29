@@ -34,9 +34,9 @@
         <img class="mb-4" src="icons/itworkicon.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
             <div class="mb-3 row">
-            <label for="inputUsername" class="sr-only">Username</label>
+            <label for="inputNama" class="sr-only">Name</label>
             
-                    <input type="text" id="inputText" class="form-control" name="username">
+                    <input type="text" id="inputNama" class="form-control" name="nama">
                 
             </div>
             <div class="mb-3 row">
@@ -64,9 +64,9 @@
 </body>
 <script type="text/javascript">
   function validasi(form){
-   if (form.username.value == ''){
-     alert("Username wajib diisi");
-     form.username.focus();
+   if (form.nama.value == ''){
+     alert("Nama wajib diisi");
+     form.nama.focus();
      return(false)
    }
    if (form.password.value == ''){

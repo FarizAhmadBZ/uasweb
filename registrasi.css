@@ -17,7 +17,7 @@ body {
 h2 {
     text-align: left;
     padding-left: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 a {
@@ -35,8 +35,8 @@ p {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -45%);
-    padding-top: 25px;
+    transform: translate(-50%, -40%);
+    padding-top: 30px;
     padding-bottom: 10px;
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
