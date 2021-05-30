@@ -11,18 +11,18 @@
 <body>
 <div class="container">
 <h2>Form Registrasi</h2>
-<form action="simpan_pendaftaran.php" method="post">
+<form action="simpan_pendaftaran.php" method="post"  enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Nama:</label>
             <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
         </div>
         <div class="form-group">
             <label>Jenis Kelamin:</label>
-            <input type="text" name="jenis kelamin" class="form-control" placeholder="Masukan Jenis Kelamin" />
+            <input type="text" name="jenis_kelamin" class="form-control" placeholder="Masukan Jenis Kelamin" />
         </div>
         <div class="form-group">
 	     <label>Tanggal Lahir:</label>
-	     <input type="date" name="tanggal lahir" class="form-control" placeholder="Masukan Tanggal Lahir" />
+	     <input type="date" name="tanggal_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" />
 	    </div> 
 	    <div class="form-group">
 	     <label>Domisili:</label>
@@ -42,15 +42,17 @@
         </div>
         <div class="form-group">
             <label>Gambar:</label>
-            <input type="file" name="Gambar" class="form-control" placeholder="Masukan Gambar" />
+            <input type="file" name="gambar" class="form-control" placeholder="Masukan Gambar" />
         </div>
 
 
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         <p> Sudah punya akun?
                   <a href="login.php">Login di sini</a>
-                </p>
+               </p>
+
     </form>
+    
 </body>
 
 </html>
