@@ -11,7 +11,7 @@
 <body>
 <div class="container">
 <h2>Form Registrasi</h2>
-<form action="simpan_pendaftaran.php" method="post"  enctype="multipart/form-data">
+<form action="cobaSimpan.php" method="post" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Nama:</label>
             <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
