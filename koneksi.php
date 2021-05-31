@@ -1,5 +1,6 @@
 <?php
-    $namaserver = "localhost";
+
+	$namaserver = "localhost";
     $nama = "root";
     $password = "";
     $koneksi = mysqli_connect($namaserver, $nama, $password);
