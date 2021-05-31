@@ -11,18 +11,18 @@
 <body>
 <div class="container">
 <h2>Form Registrasi</h2>
-<form action="cobaSimpan.php" method="post" enctype="multipart/form-data">
+<form action="simpan_pendaftaran.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Nama:</label>
             <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
         </div>
         <div class="form-group">
             <label>Jenis Kelamin:</label>
-            <input type="text" name="jenis_kelamin" class="form-control" placeholder="Masukan Jenis Kelamin" />
+            <input type="text" name="jenKel" class="form-control" placeholder="Masukan Jenis Kelamin" />
         </div>
         <div class="form-group">
 	     <label>Tanggal Lahir:</label>
-	     <input type="date" name="tanggal_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" />
+	     <input type="date" name="tglLahir" class="form-control" placeholder="Masukan Tanggal Lahir" />
 	    </div> 
 	    <div class="form-group">
 	     <label>Domisili:</label>
@@ -34,11 +34,11 @@
         </div>
         <div class="form-group">
             <label>Link Github:</label>
-            <input type="text" name="link_github" class="form-control" placeholder="Masukan Link Github" />
+            <input type="text" name="linkGit" class="form-control" placeholder="Masukan Link Github" />
         </div>
 	    <div class="form-group">
             <label>Password:</label>
-            <input type="password" name="password" class="form-control" placeholder="Masukan Password" />
+            <input type="password" name="pw" class="form-control" placeholder="Masukan Password" />
         </div>
         <div class="form-group">
             <label>Gambar:</label>
