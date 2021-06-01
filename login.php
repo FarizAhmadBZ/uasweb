@@ -42,7 +42,7 @@
             <div class="mb-3 row">
             <label for="inputPassword" class="sr-only">Password</label>
                 
-                    <input type="password" class="form-control" id="inputPassword" name="password">
+                    <input type="password" class="form-control" id="inputPassword" name="pw">
                 
             </div>
 

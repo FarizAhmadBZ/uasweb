@@ -2,16 +2,16 @@
     session_start();
     include "koneksi.php";
 
-    echo $_POST['username'];
+    echo $_POST['nama'];
     echo "<br>";
-    echo $_POST['password'];
+    echo $_POST['pw'];
 
     //Tangkap variabel dari inputan
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $nama = $_POST['nama'];
+    $pw = $_POST['pw'];
 
     //matchkan dengan database
-    $query = mysqli_query($koneksi,"SELECT * FROM users WHERE id = '$id' AND nama = '$nama'");
+    $query = mysqli_query($koneksi,"SELECT * FROM users WHERE nama = '$nama' AND password = '$pw' ");
     //mysqli_query()
     $jum = mysqli_num_rows($query);
     echo "<br>";
@@ -19,14 +19,7 @@
 
     if($jum > 0)
     {
-        //bikin variabel session
         
-        
-        $_SESSION['username'] = $nama;
-        $_SESSION['role'] = "member";
-        //$namakukie = username;
-        //$_COOKIE("username","mimin rpl");
-        setcookie($_SESSION['username'],$nama);
 
         
 

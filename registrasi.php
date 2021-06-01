@@ -44,6 +44,11 @@
             <label>Gambar:</label>
             <input type="file" name="gambar" class="form-control" placeholder="Masukan Gambar" />
         </div>
+        <div class="form-group">
+            <label>Bidang :</label>
+            <input type="text" name="bidang" class="form-control" placeholder="Masukan Bidang Pekerjaan" />
+        </div>
+        
 
 
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>

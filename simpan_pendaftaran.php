@@ -10,6 +10,8 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $linkGit = $_POST['linkGit'];
   $pw = $_POST['pw'];
+  $bidang = $_POST['bidang'];
+  
 
   $filename = $_FILES["gambar"]["name"];
   $tempname = $_FILES["gambar"]["tmp_name"];
@@ -28,7 +30,7 @@ if (isset($_POST['submit'])) {
   // echo "$tempname<br/>";
   // echo "$folder<br/>";
 
-  $sql = "INSERT INTO users(nama, jenis_kelamin, tanggal_lahir, domisili, email, link_github, password, gambar) VALUES('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder');";
+  $sql = "INSERT INTO users(nama, jenis_kelamin, tanggal_lahir, domisili, email, link_github, password, gambar, bidang) VALUES('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang');";
 
   $hasil = mysqli_query($koneksi, $sql);
 
