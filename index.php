@@ -39,8 +39,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#workers">
-                    <h4>Workers</h4>
+                <a class="nav-link text-light" href="registrasi.php">
+                    <h4>Register</h4>
                 </a>
             </li>
             <li class="nav-item">

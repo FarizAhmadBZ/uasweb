@@ -24,7 +24,7 @@
         
 
         //berhasil login dia masuk ke dashboar / administrator
-        header("location:index.php");
+        header("location:worker.php");
     }
     else
     {
