@@ -1,3 +1,10 @@
+<?php
+
+    session_start();
+    if ($_SESSION['loggedin'] == "true") {
+        ?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -43,7 +50,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="login.php">
+                <a class="nav-link text-light" href="logout.php">
                     <h4>Logout</h4>
                 </a>
             </li>
@@ -65,92 +72,103 @@
 
     <table id="listOfProfiles" align="center">
     <tr>
+        
         <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/web designer1.jpg" class="workerimage">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h3 class="card-title" style="color: white;">Web Developer</h3>
-        </div>
-        </div>
-    </div>
-    </div>
+            <a href="tampilworker-web.php">
+            <div id="profile" align="left">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/web designer1.jpg" class="workerimage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">Web Developer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
         </td>
         <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/desktop.jpg" class="workerimage">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h3 class="card-title" style="color: white;">Desktop Developer</h3>
-        </div>
-        </div>
-    </div>
-    </div>
+            <a href="tampilworker-desktop.php">
+            <div id="profile" align="left">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/desktop.jpg" class="workerimage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">Desktop Developer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
         </td>
         <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/mobile.jpg" class="workerimage">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h3 class="card-title" style="color: white;">Mobile Developer</h3>
-        </div>
-        </div>
-    </div>
-    </div>
+            <a href="tampilworker-mobile.php">
+            <div id="profile" align="left">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/mobile.jpg" class="workerimage">
+                </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">Mobile Developer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
         </td>
     </tr>
     <tr>
-    <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/PEXELS2.jpg" class="workerimage">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h3 class="card-title" style="color: white;">IT Consultant</h3>
-        </div>
-        </div>
-    </div>
-    </div>
+        <td>
+            <a href="tampilworker-consultant.php">
+            <div id="profile" align="left">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/PEXELS2.jpg" class="workerimage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">IT Consultant</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
         </td>
         <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/database engineer.jpg" class="workerimage">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h3 class="card-title" style="color: white;">Database Engineer</h3>
-        </div>
-        </div>
-    </div>
-    </div>
+            <a href="tampilworker-database.php">
+            <div id="profile" align="left">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/database engineer.jpg" class="workerimage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: white;">Database Engineer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
         </td>
     </tr>
     </table>
     <div id="workers" style="height: 40px;"></div>
-    <div class="jumbotron bg-transparent text-light text-center">
-        <h1 class="display-4">
-            Recommended Company
-        </h1>
-        <hr class="my-4">
-        <p class="lead">Choose your position in best company</p>
-        <p>
-            <a href="#profile">
-                <img src="icons/down-arrow.svg" class="scrollDownButton">
-            </a>
-        </p>
+        <div class="jumbotron bg-transparent text-light text-center">
+            <h1 class="display-4">
+               Recommended Company
+            </h1>
+            <hr class="my-4">
+                <p class="lead">Choose your position in best company</p>
+                <p>
+                    <a href="#profile">
+                        <img src="icons/down-arrow.svg" class="scrollDownButton">
+                    </a>
+                </p>
     </div>
     <table id="listOfProfiles" align="center">
     <tr>
@@ -248,3 +266,10 @@
 </tr>
 </body>
 </html>
+
+<?php
+    }else{
+        header("location:login.php");
+    }
+
+?>
