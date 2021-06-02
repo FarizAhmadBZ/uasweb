@@ -91,7 +91,6 @@ body {
 #listOfProfiles tr th {
     font-size: 30px;
     font-weight: 60;
-    width: auto;
     padding-bottom: 40px;
     width: 200px;
     padding-right: 10px;
@@ -117,6 +116,17 @@ body {
     display: block;
     width: 130px;
     height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.workerimage2 {
+    display: block;
+    width: 120px;
+    height: 120px;
     overflow: hidden;
     border-radius: 10px;
     border-style: solid;

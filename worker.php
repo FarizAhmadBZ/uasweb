@@ -140,31 +140,95 @@
     <tr>
         <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/gojek.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/gojek.jpg" class="workerimage2">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Gojek Indonesia</h5>
+        <p class="card-text">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
         <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/gojek.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/tokopedia.jpg" class="workerimage2">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Tokopedia Indonesia</h5>
+        <p class="card-text">Tokopedia merupakan perusahaan perdagangan elektronik atau sering disebut toko daring dan mendukung UMKM yang ada di Indonesia.</p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
        <td>
-        <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/gojek.jpg" alt="Avatar" class="workerimage">
-            </a>
+       <div id="profile" align="left">
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/sagara.jpg" class="workerimage2">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Sagara Technology</h5>
+        <p class="card-text">Sagara Technology merupakan sebuah perusahaan teknologi yang bergerak di bidang pengembangan website dan aplikasi. </p>
+        </div>
         </div>
     </div>
-        </td>
+    </div>
     </tr>
+<tr>
+<td>
+        <div id="profile" align="left">
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/garena.jpg" class="workerimage2">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Garena Indonesia</h5>
+        <p class="card-text">Garena adalah sebuah platform hiburan digital, yang mengembangkan dan mempublikasikan kontan digital PC dan peranti bergerak daring di Asia Tenggara dan Taiwan. </p>
+        </div>
+        </div>
+    </div>
+    </div>
+        </td>
+        <td>
+        <div id="profile" align="left">
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/bukalapak.png" class="workerimage2">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Bukalapak Indonesia</h5>
+        <p class="card-text">Bukalapak merupakan salah satu perusahaan e-commerce di Indonesia yang bertujuan untuk membantu UMKM mengembangkan bisnis mereka. </p>
+        </div>
+        </div>
+    </div>
+    </div>
+        </td>
+        <td>
+        <div id="profile" align="left">
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/lintasarta.jpg" class="workerimage2">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Lintasarta Indonesia</h5>
+        <p class="card-text">Lintasarta (PT Aplikanusa Lintasarta) adalah perusahaan Indonesia yang bergerak di bidang penyedia jasa komunikasi data, internet & IT Services. </p>
+        </div>
+        </div>
+    </div>
+    </div>
+        </td>
+</tr>
 </body>
 </html>
