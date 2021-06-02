@@ -46,7 +46,7 @@
         </div>
         <div class="form-group">
             <label>Gambar:</label>
-            <input type="file" name="gambar" class="form-control" placeholder="Masukan Gambar" required/>
+            <input type="file" name="gambar"  accept="image/png, image/jpeg" class="form-control" placeholder="Masukan Gambar" required/>
         </div>
         <div class="form-group">
             <label>Bidang :</label>

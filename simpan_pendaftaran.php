@@ -13,7 +13,13 @@ if (isset($_POST['submit'])) {
   $bidang = $_POST['bidang'];
   
 
-  $filename = $_FILES["gambar"]["name"];
+  $randomNum1 = rand(1111, 9999);
+  $randomNum2 = rand(1111, 9999);
+
+  $randomNum = $randomNum1.$randomNum2;
+  $randomNum = md5($randomNum);
+
+  $filename = $randomNum.".png";
   $tempname = $_FILES["gambar"]["tmp_name"];
   $folder = "uploaded/".$filename;
 
