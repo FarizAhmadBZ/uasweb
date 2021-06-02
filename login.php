@@ -34,9 +34,9 @@
         <img class="mb-4" src="icons/itworkicon.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
             <div class="mb-3 row">
-            <label for="inputNama" class="sr-only">Name</label>
+            <label for="inputEmail" class="sr-only">Email</label>
             
-                    <input type="text" id="inputNama" class="form-control" name="nama">
+                    <input type="text" id="inputEmail" class="form-control" name="email">
                 
             </div>
             <div class="mb-3 row">
