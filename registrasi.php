@@ -52,9 +52,11 @@
             <label>Bidang :</label>
             <select class="form-select form-select-sm form-control" name="bidang" required>
                 <option value="">Pilih Bidang</option>
-                <option value="Web">Web</option>
-                <option value="Desktop">Desktop</option>
-                <option value="Mobile">Mobile</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Desktop Developer">Desktop Developer</option>
+                <option value="Mobile Developer">Mobile Developer</option>
+                <option value="IT Consultant">IT Consultant</option>
+                <option value="Database Engineer">Database Engineer</option>
             </select>
         </div>
         
