@@ -69,14 +69,11 @@
         <div id="profile" align="left">
         <div class="row g-0">
          <div class="col-md-4">
-             <img src="images/database engineer.jpg" class="workerimage">
+             <img src="images/web designer1.jpg" class="workerimage">
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Alexander Bent</h5>
-        <p class="card-text">Jakarta, Indonesia</p>
-        <p class="card-text">Database Engineer at Bukalapak</p>
-        <p class="card-text">github.com/alexanderb09</p>
+         <h3 class="card-title" style="color: white;">Web Developer</h3>
         </div>
         </div>
     </div>
@@ -86,14 +83,11 @@
         <div id="profile" align="left">
         <div class="row g-0">
          <div class="col-md-4">
-             <img src="images/database engineer.jpg" class="workerimage">
+             <img src="images/desktop.jpg" class="workerimage">
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Alexander Bent</h5>
-        <p class="card-text">Jakarta, Indonesia</p>
-        <p class="card-text">Database Engineer at Bukalapak</p>
-        <p class="card-text">github.com/alexanderb09</p>
+         <h3 class="card-title" style="color: white;">Desktop Developer</h3>
         </div>
         </div>
     </div>
@@ -103,14 +97,11 @@
         <div id="profile" align="left">
         <div class="row g-0">
          <div class="col-md-4">
-             <img src="images/database engineer.jpg" class="workerimage">
+             <img src="images/mobile.jpg" class="workerimage">
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Alexander Bent</h5>
-        <p class="card-text">Jakarta, Indonesia</p>
-        <p class="card-text">Database Engineer at Bukalapak</p>
-        <p class="card-text">github.com/alexanderb09</p>
+         <h3 class="card-title" style="color: white;">Mobile Developer</h3>
         </div>
         </div>
     </div>
@@ -122,14 +113,11 @@
         <div id="profile" align="left">
         <div class="row g-0">
          <div class="col-md-4">
-             <img src="images/database engineer.jpg" class="workerimage">
+             <img src="images/PEXELS2.jpg" class="workerimage">
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Alexander Bent</h5>
-        <p class="card-text">Jakarta, Indonesia</p>
-        <p class="card-text">Database Engineer at Bukalapak</p>
-        <p class="card-text">github.com/alexanderb09</p>
+         <h3 class="card-title" style="color: white;">IT Consultant</h3>
         </div>
         </div>
     </div>
@@ -143,27 +131,7 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Alexander Bent</h5>
-        <p class="card-text">Jakarta, Indonesia</p>
-        <p class="card-text">Database Engineer at Bukalapak</p>
-        <p class="card-text">github.com/alexanderb09</p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/database engineer.jpg" class="workerimage">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title">Alexander Bent</h5>
-        <p class="card-text">Jakarta, Indonesia</p>
-        <p class="card-text">Database Engineer at Bukalapak</p>
-        <p class="card-text">github.com/alexanderb09</p>
+         <h3 class="card-title" style="color: white;">Database Engineer</h3>
         </div>
         </div>
     </div>
@@ -194,8 +162,8 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Gojek Indonesia</h5>
-        <p class="card-text">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
+         <h5 class="card-title" style="color: white;">Gojek Indonesia</h5>
+        <p class="card-text" style="color: white;">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
         </div>
         </div>
     </div>
@@ -209,8 +177,8 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Tokopedia Indonesia</h5>
-        <p class="card-text">Tokopedia merupakan perusahaan perdagangan elektronik atau sering disebut toko daring dan mendukung UMKM yang ada di Indonesia.</p>
+         <h5 class="card-title" style="color: white;">Tokopedia Indonesia</h5>
+        <p class="card-text" style="color: white;">Tokopedia merupakan perusahaan perdagangan elektronik atau sering disebut toko daring dan mendukung UMKM yang ada di Indonesia.</p>
         </div>
         </div>
     </div>
@@ -224,8 +192,8 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Sagara Technology</h5>
-        <p class="card-text">Sagara Technology merupakan sebuah perusahaan teknologi yang bergerak di bidang pengembangan website dan aplikasi. </p>
+         <h5 class="card-title" style="color: white;">Sagara Technology</h5>
+        <p class="card-text" style="color: white;">Sagara Technology merupakan sebuah perusahaan teknologi yang bergerak di bidang pengembangan website dan aplikasi. </p>
         </div>
         </div>
     </div>
@@ -240,8 +208,8 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Garena Indonesia</h5>
-        <p class="card-text">Garena adalah sebuah platform hiburan digital, yang mengembangkan dan mempublikasikan kontan digital PC dan peranti bergerak daring di Asia Tenggara dan Taiwan. </p>
+         <h5 class="card-title" style="color: white;">Garena Indonesia</h5>
+        <p class="card-text" style="color: white;">Garena adalah sebuah platform hiburan digital, yang mengembangkan dan mempublikasikan kontan digital PC dan peranti bergerak daring di Asia Tenggara dan Taiwan. </p>
         </div>
         </div>
     </div>
@@ -255,8 +223,8 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Bukalapak Indonesia</h5>
-        <p class="card-text">Bukalapak merupakan salah satu perusahaan e-commerce di Indonesia yang bertujuan untuk membantu UMKM mengembangkan bisnis mereka. </p>
+         <h5 class="card-title" style="color: white;">Bukalapak Indonesia</h5>
+        <p class="card-text" style="color:white;">Bukalapak merupakan salah satu perusahaan e-commerce di Indonesia yang bertujuan untuk membantu UMKM mengembangkan bisnis mereka. </p>
         </div>
         </div>
     </div>
@@ -270,8 +238,8 @@
          </div>
          <div class="col-md-8">
          <div class="card-body">
-         <h5 class="card-title">Lintasarta Indonesia</h5>
-        <p class="card-text">Lintasarta (PT Aplikanusa Lintasarta) adalah perusahaan Indonesia yang bergerak di bidang penyedia jasa komunikasi data, internet & IT Services. </p>
+         <h5 class="card-title" style="color: white;">Lintasarta Indonesia</h5>
+        <p class="card-text" style="color: white;">Lintasarta (PT Aplikanusa Lintasarta) adalah perusahaan Indonesia yang bergerak di bidang penyedia jasa komunikasi data, internet & IT Services. </p>
         </div>
         </div>
     </div>
