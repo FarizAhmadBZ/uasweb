@@ -21,7 +21,7 @@ if ($password2 == $password3) {
 if ($password == $password1) {
 $sql = "call editpassword('$id', '$password');";
 $hasil = mysqli_query($koneksi, $sql);
-echo "Berhasil";
+echo "<script>alert('Berhasil ganti password!'); document.location = 'profile.php'</script>";
 }
 else {
 echo "<script>alert('password dan konfirmasi password berbeda!'); document.location = 'editpassword.php'</script>";
@@ -30,13 +30,5 @@ echo "<script>alert('password dan konfirmasi password berbeda!'); document.locat
 else {
 echo "<script>alert('password lama salah!'); document.location = 'editpassword.php'</script>";
 }
-/*
-if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
-    echo "Berhasil";
-  }else {
-    echo "gagal";
-  }
-*/
 }
 ?>

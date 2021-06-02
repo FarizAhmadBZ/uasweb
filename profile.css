@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-image: url(images/coding.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: overlay;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -35%);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .3);
+}
+
+.container h2 {
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #0481bb;
+}
+
+.container label {
+    text-align: left;
+    color: #90caf9;
+    font-size: 16px;
+}
+
+.container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #752BEA;
+    color: #fff;
+    font-size: 14px;
+}
+
+.container form button {
+    width: 45%;
+    height: 40px;
+    padding: 5px 0;
+    border: none;
+    background-color: #752BEA;
+    font-size: 18px;
+    color: #fafafa;
+    border-radius: 20px;
+}
+
+.editbutton {
+	color: #752BEA;
+}

@@ -15,10 +15,9 @@ $sql = "call editnama('$id', '$nama');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
-    echo "Berhasil";
+echo "<script>alert('Berhasil mengganti nama!'); document.location = 'profile.php'</script>";
   }else {
-    echo "gagal";
+echo "<script>alert('Gagal mengganti nama!'); document.location = 'editnama.php'</script>";
   }
 }
 ?>

@@ -15,10 +15,9 @@ $sql = "call editkelamin('$id', '$jenkel');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
-    echo "Berhasil";
+echo "<script>alert('Berhasil mengganti jenis kelamin!'); document.location = 'profile.php'</script>";
   }else {
-    echo "gagal";
+echo "<script>alert('Gagal mengganti jenis kelamin!'); document.location = 'editjk.php'</script>";
   }
 }
 ?>

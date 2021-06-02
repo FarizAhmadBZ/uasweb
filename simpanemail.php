@@ -15,10 +15,9 @@ $sql = "call editemail('$id', '$email');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
-    echo "Berhasil";
+echo "<script>alert('Berhasil mengganti email!'); document.location = 'profile.php'</script>";
   }else {
-    echo "gagal";
+echo "<script>alert('Gagal mengganti email!'); document.location = 'editemail.php'</script>";
   }
 }
 ?>

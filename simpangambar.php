@@ -23,10 +23,10 @@ $sql = "call editgambar('$id', '$folder');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
+echo "<script>alert('Berhasil mengganti gambar!'); document.location = 'profile.php'</script>";
     echo "Berhasil";
   }else {
-    echo "gagal";
+echo "<script>alert('Gagal mengganti gambar!'); document.location = 'editgambar.php'</script>";
   }
 }
 ?>

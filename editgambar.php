@@ -11,19 +11,14 @@
 </head>
 <body>
 <?php
-	
 	include "koneksi.php";
 	session_start();
-	
     $id = $_SESSION['id'];
-	
 	$query = "SELECT gambar FROM users WHERE id = '$id'";
     $sql = mysqli_query($koneksi, $query) or die (mysqli_error($koneksi));
     $fetched = mysqli_fetch_array($sql);
     $gambar = $fetched['gambar'];
-	
 ?>
-
 <div class="container">
 <h2>Edit Gambar</h2>
 <form action="simpangambar.php" method="POST" enctype="multipart/form-data">

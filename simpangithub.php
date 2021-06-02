@@ -15,10 +15,9 @@ $sql = "call editgh('$id', '$github');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
-    echo "Berhasil";
+echo "<script>alert('Berhasil mengganti link github!'); document.location = 'profile.php'</script>";
   }else {
-    echo "gagal";
+echo "<script>alert('Gagal mengganti link github!'); document.location = 'editgithub.php'</script>";
   }
 }
 ?>

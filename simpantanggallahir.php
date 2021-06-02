@@ -15,10 +15,9 @@ $sql = "call edittanggallahir('$id', '$tgllhr');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-    header("lnotif=Berhasil Daftar Akun");
-    echo "Berhasil";
+echo "<script>alert('Berhasil mengganti tanggal lahir!'); document.location = 'profile.php'</script>";
   }else {
-    echo "gagal";
+echo "<script>alert('Gagal mengganti tanggal lahir!'); document.location = 'edittanggallahir.php'</script>";
   }
 }
 ?>
