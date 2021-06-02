@@ -67,58 +67,106 @@
     <tr>
         <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/database engineer.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/database engineer.jpg" class="workerimage">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Alexander Bent</h5>
+        <p class="card-text">Jakarta, Indonesia</p>
+        <p class="card-text">Database Engineer at Bukalapak</p>
+        <p class="card-text">github.com/alexanderb09</p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
         <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/database engineer.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/database engineer.jpg" class="workerimage">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Alexander Bent</h5>
+        <p class="card-text">Jakarta, Indonesia</p>
+        <p class="card-text">Database Engineer at Bukalapak</p>
+        <p class="card-text">github.com/alexanderb09</p>
+        </div>
         </div>
     </div>
+    </div>
         </td>
-       <td>
+        <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/database engineer.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/database engineer.jpg" class="workerimage">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Alexander Bent</h5>
+        <p class="card-text">Jakarta, Indonesia</p>
+        <p class="card-text">Database Engineer at Bukalapak</p>
+        <p class="card-text">github.com/alexanderb09</p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
     </tr>
     <tr>
     <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/database engineer.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/database engineer.jpg" class="workerimage">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Alexander Bent</h5>
+        <p class="card-text">Jakarta, Indonesia</p>
+        <p class="card-text">Database Engineer at Bukalapak</p>
+        <p class="card-text">github.com/alexanderb09</p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
         <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/database engineer.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/database engineer.jpg" class="workerimage">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Alexander Bent</h5>
+        <p class="card-text">Jakarta, Indonesia</p>
+        <p class="card-text">Database Engineer at Bukalapak</p>
+        <p class="card-text">github.com/alexanderb09</p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
         <td>
         <div id="profile" align="left">
-        <div class="workerimagecontainer" align="center">
-            <a href="https://github.com/muhamadariq-09" target="_blank">
-            <img src="images/database engineer.jpg" alt="Avatar" class="workerimage">
-            </a>
+        <div class="row g-0">
+         <div class="col-md-4">
+             <img src="images/database engineer.jpg" class="workerimage">
+         </div>
+         <div class="col-md-8">
+         <div class="card-body">
+         <h5 class="card-title">Alexander Bent</h5>
+        <p class="card-text">Jakarta, Indonesia</p>
+        <p class="card-text">Database Engineer at Bukalapak</p>
+        <p class="card-text">github.com/alexanderb09</p>
         </div>
+        </div>
+    </div>
     </div>
         </td>
     </tr>
