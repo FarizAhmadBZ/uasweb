@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
   // echo "$tempname<br/>";
   // echo "$folder<br/>";
 
-  $sql = "INSERT INTO users(nama, jenis_kelamin, tanggal_lahir, domisili, email, link_github, password, gambar, bidang) VALUES('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang');";
+  $sql = "CALL registrasi('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang');";
 
   $hasil = mysqli_query($koneksi, $sql);
 
