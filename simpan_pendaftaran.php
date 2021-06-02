@@ -17,32 +17,24 @@ if (isset($_POST['submit'])) {
   $tempname = $_FILES["gambar"]["tmp_name"];
   $folder = "uploaded/".$filename;
 
-    //   	TESTING ECHO
-  // echo "$nama<br/>";
-  // echo "$jk<br/>";
-  // echo "$tglLahir<br/>";
-  // echo "$domisili<br/>";
-  // echo "$email<br/>";
-  // echo "$linkGit<br/>";
-  // echo "$pw<br/>";
+  $cekEmail = "SELECT * FROM users WHERE email = '$email';";
+  $hasilCekEmail = mysqli_query($koneksi, $cekEmail);
+  $jumlahCekEmail = mysqli_num_rows($hasilCekEmail);
+  if ($jumlahCekEmail > 0) {
+    echo "<script>alert('EMAIL SUDAH TERPAKAI'); document.location = 'registrasi.php'</script>";
+  }else{
+    move_uploaded_file($tempname, $folder);
+    $sql = "CALL registrasi('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang');";
 
-  // echo "$filename<br/>";
-  // echo "$tempname<br/>";
-  // echo "$folder<br/>";
+    $hasil = mysqli_query($koneksi, $sql);
 
-  $sql = "CALL registrasi('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang');";
-
-  $hasil = mysqli_query($koneksi, $sql);
-
-  if ($hasil) {
-    header("location:login.php?notif=Berhasil Daftar Akun");
-    echo "Berhasil";
-  }else {
-    echo "gagal";
+    if ($hasil) {
+      echo "<script>alert('Berhasil mendaftarkan akun'); document.location = 'login.php'</script>";
+    }else {
+      echo "<script>alert('Gagal mendaftarkan akun'); document.location = 'registrasi.php'</script>";
+    }
   }
+
 }
-
-
-
 
 ?>
