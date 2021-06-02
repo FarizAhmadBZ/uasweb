@@ -14,39 +14,48 @@
 <form action="simpan_pendaftaran.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Nama:</label>
-            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" />
+            <input type="text" name="nama" class="form-control" placeholder="Masukan Nama" required />
         </div>
         <div class="form-group">
             <label>Jenis Kelamin:</label>
-            <input type="text" name="jenKel" class="form-control" placeholder="Masukan Jenis Kelamin" />
+            <select class="form-select form-select-sm form-control" name="jenKel" required>
+                <option value="">Pilih Jenis Kelamin</option>
+                <option value="Pria">Pria</option>
+                <option value="Wanita">Wanita</option>
+            </select>
         </div>
         <div class="form-group">
 	     <label>Tanggal Lahir:</label>
-	     <input type="date" name="tglLahir" class="form-control" placeholder="Masukan Tanggal Lahir" />
+	     <input type="date" name="tglLahir" class="form-control" placeholder="Masukan Tanggal Lahir" required/>
 	    </div> 
 	    <div class="form-group">
 	     <label>Domisili:</label>
-	     <input type="text" name="domisili" class="form-control" placeholder="Masukan Domisili" />
+	     <input type="text" name="domisili" class="form-control" placeholder="Masukan Domisili" required/>
 	    </div> 
 	    <div class="form-group">
             <label>Email:</label>
-            <input type="email" name="email" class="form-control" placeholder="Masukan Email" />
+            <input type="email" name="email" class="form-control" placeholder="Masukan Email" required/>
         </div>
         <div class="form-group">
             <label>Link Github:</label>
-            <input type="text" name="linkGit" class="form-control" placeholder="Masukan Link Github" />
+            <input type="text" name="linkGit" class="form-control" placeholder="Masukan Link Github" required/>
         </div>
 	    <div class="form-group">
             <label>Password:</label>
-            <input type="password" name="pw" class="form-control" placeholder="Masukan Password" />
+            <input type="password" name="pw" class="form-control" placeholder="Masukan Password" required/>
         </div>
         <div class="form-group">
             <label>Gambar:</label>
-            <input type="file" name="gambar" class="form-control" placeholder="Masukan Gambar" />
+            <input type="file" name="gambar" class="form-control" placeholder="Masukan Gambar" required/>
         </div>
         <div class="form-group">
             <label>Bidang :</label>
-            <input type="text" name="bidang" class="form-control" placeholder="Masukan Bidang Pekerjaan" />
+            <select class="form-select form-select-sm form-control" name="bidang" required>
+                <option value="">Pilih Bidang</option>
+                <option value="Web">Web</option>
+                <option value="Desktop">Desktop</option>
+                <option value="Mobile">Mobile</option>
+            </select>
         </div>
         
 

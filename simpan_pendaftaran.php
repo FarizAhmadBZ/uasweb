@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 
   $filename = $_FILES["gambar"]["name"];
   $tempname = $_FILES["gambar"]["tmp_name"];
-    $folder = "uploaded/".$filename;
+  $folder = "uploaded/".$filename;
 
     //   	TESTING ECHO
   // echo "$nama<br/>";
