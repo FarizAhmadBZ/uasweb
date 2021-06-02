@@ -28,7 +28,14 @@
 <form action="simpanbidang.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Bidang :</label>
-            <input type="text" name="editbidang" class="form-control" placeholder= <?php echo $bidang; ?> >
+            <select class="form-select form-select-sm form-control" name="bidang"  placeholder= <?php echo $bidang; ?>required>
+                <option value="">Pilih Bidang</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Desktop Developer">Desktop Developer</option>
+                <option value="Mobile Developer">Mobile Developer</option>
+                <option value="IT Consultant">IT Consultant</option>
+                <option value="Database Engineer">Database Engineer</option>
+            </select>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

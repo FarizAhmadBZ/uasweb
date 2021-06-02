@@ -14,7 +14,7 @@
 	<link rel="icon" type="image/x-icon" href="icons/itworkicon.png">
     <!--defines page icon -->
 
-    <link rel="stylesheet" type="text/css" href="worker.css">
+    <link rel="stylesheet" type="text/css" href="tampilworker.css">
     <!-- Link to local CSS -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -30,19 +30,19 @@
     <!-- insert bootstrap jquery -->
 
 </head>
-<body>
+<body background="images/coding.jpeg">
 
 	<div id="home"></div>
     <nav class="navbar customBackgroundNavbar navbar-expand-sm sticky-top">
         <img src="images/ITWork.png" id="navbarLogo">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="#home">
+                <a class="nav-link text-light" href="profile.php">
                     <h4>Profile</h4>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="#workers">
+                <a class="nav-link text-light" href="workers.php">
                     <h4>Workers</h4>
                 </a>
             </li>
@@ -64,25 +64,27 @@
     		while($dataWorker = mysqli_fetch_assoc($query)){
     		?>
 
+<table>
     			<tr>
     				<td>
-    					<div class="col-md-4">
-                        	<img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage">
-                    	</div>
-    				</td>
-    				<td>
-    					<?php echo $dataWorker['nama']; ?>
-    				</td>
-    				<td>
-    					<?php echo $dataWorker['usia']; ?>
-    				</td>
-    				<td>
-    					<?php echo $dataWorker['domisili']; ?>
-    				</td>
-    				<td>
+						
+					<div id="profile" align="left">
+                	<div class="row g-0">
+						<div class="col-md-4">
+                        	<img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage2">
+						</div>
+					<div class="col-md-8">
+                    <div class="card-body">
+					<h3 class="card-title" style="color: white;"><?php echo $dataWorker['nama']; ?></h3>
+					<p class="card-text" style="color: white;"><?php echo $dataWorker['usia']; ?></P>
+					<p class="card-text" style="color: white;"><?php echo $dataWorker['domisili']; ?></p>
     					<a href="<?php echo $dataWorker['link_github']; ?>">To Github</a>
+					</div>
+					</div>
+					</div>
     				</td>
     			</tr>
+				</table>
 
     		<?php
     		}

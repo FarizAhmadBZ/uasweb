@@ -28,7 +28,7 @@
 <form action="simpanemail.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>E-mail:</label>
-            <input type="text" name="editemail" class="form-control" placeholder= <?php echo $email; ?> >
+            <input type="email" name="editemail" class="form-control" placeholder= <?php echo $email; ?> >
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

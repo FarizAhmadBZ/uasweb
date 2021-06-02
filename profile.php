@@ -61,7 +61,7 @@ $bidang = $fetched['bidang'];
 ?>
 
 <div class="container">
-<h2>Form Registrasi</h2>
+<h2>Profile</h2>
 <form action="" method="POST" enctype="multipart/form-data">
         <div class="form-group">
             <label><img src = <?php echo $gambar?> align = "middle"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>

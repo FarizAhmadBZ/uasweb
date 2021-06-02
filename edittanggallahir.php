@@ -24,7 +24,7 @@
 ?>
 
 <div class="container">
-<h2>Edit Email</h2>
+<h2>Edit Tanggal Lahir</h2>
 <form action="simpantanggallahir.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
 	     <label>Tanggal Lahir : <?php echo $tgllhr; ?> </label>
