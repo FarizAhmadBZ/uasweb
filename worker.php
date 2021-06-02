@@ -40,7 +40,7 @@
         <img src="images/ITWork.png" id="navbarLogo">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="#home">
+                <a class="nav-link text-light" href="profile.php">
                     <h4>Profile</h4>
                 </a>
             </li>

@@ -62,7 +62,7 @@ $bidang = $fetched['bidang'];
 
 <div class="container">
 <h2>Form Registrasi</h2>
-<form action="" method="POST" enctype="multipart/form-data">
+
         <div class="form-group">
             <label><img src = <?php echo $gambar?> align = "middle"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>
         </div>
@@ -88,10 +88,8 @@ $bidang = $fetched['bidang'];
             <label>Bidang : <?php echo $bidang; ?> <a class = "editbutton" href = "editbidang.php">(edit)</a></label>
         </div>
 
-        <button type="buton" name="batal" class="mbutton">Batal</button> <button type="button" name="submit" class="mbutton">Submit</button>
+        <button onclick="location.href='worker.php'" class = "tombol">Batal</button><button class="tombol">Submit</button>
 
-    </form>
-    
 </body>
 
 </html>
