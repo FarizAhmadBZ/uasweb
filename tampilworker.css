@@ -8,24 +8,12 @@ html {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
 }
 
-.carouselImages {
-    width: 100%;
-    height: 500px;
-    filter: blur(5px) brightness(60%);
-    object-fit: fill;
-    overflow: hidden;
-}
-
 body {
     background-size: cover;
     background-attachment: fixed;
     overflow: overlay;
     transition: 0.5s;
     backdrop-filter: blur(5px);
-}
-
-.carousel-caption {
-    top: 43%;
 }
 
 .scrollDownButton {
@@ -74,42 +62,6 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
     height: 60px;
     width: auto;
-}
-
-.profile {
-    background: linear-gradient(267.93deg, #63A1FF 11.94%, rgba(51, 145, 255, 0) 67.03%), #6D48FF;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    margin: auto;
-}
-
-#listOfProfiles {
-    border-style: none;
-}
-
-#listOfProfiles tr th {
-    font-size: 30px;
-    font-weight: 60;
-    padding-bottom: 40px;
-    width: 200px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-#listOfProfiles tr td {
-    padding-bottom: 30px;
-    width: 200px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.workerimagecontainer {
-    position: relative;
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
 }
 
 .workerimage2 {

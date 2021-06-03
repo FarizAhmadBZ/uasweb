@@ -64,8 +64,8 @@ $bidang = $fetched['bidang'];
 
 <h2>Profile</h2>
 
-        <div class="form-group workerimagecontainer">
-            <label><img src = "<?php echo $gambar;?>" align = "middle"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>
+        <div class="form-group">
+            <label><img src = "<?php echo $gambar;?>" align = "middle" width="200px" height="300px"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>
         </div>
 	    <div class="form-group">
             <label>Nama: <?php echo $nama; ?> <a class = "editbutton" href = "editnama.php">(edit)</a></label>
