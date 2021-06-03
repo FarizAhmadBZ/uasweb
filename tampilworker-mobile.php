@@ -32,7 +32,7 @@
 </head>
 <body background="images/coding.jpeg">
 
-	<div id="home"></div>
+	<div id="home">
     <nav class="navbar customBackgroundNavbar navbar-expand-sm sticky-top">
         <img src="images/ITWork.png" id="navbarLogo">
         <ul class="navbar-nav ml-auto">
@@ -53,9 +53,17 @@
             </li>
         </ul>
     </nav>
-    <center><h2>OUR MOBILE DEVELOPERS</h2></center>
+	<center><h2 style="color: white;">OUR IT CONSULTANTS</h2></center>
     
-    <table>
+	<table class="table table-hover" style="color: white;">
+    <thead>
+        <th>Gambar</th>
+		<th>Nama</th>
+		<th>Usia</th>
+		<th>Domisili</th>
+		<th>Link Github</th>
+      </tr>
+    </thead>
     	
     	<?php
     		include "koneksi.php";
@@ -63,35 +71,22 @@
     		$query = mysqli_query($koneksi, $sql);
     		while($dataWorker = mysqli_fetch_assoc($query)){
     		?>
-
-<table>
-    			<tr>
-    				<td>
-						
-					<div id="profile" align="left">
-                	<div class="row g-0">
-						<div class="col-md-4">
-                        	<img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage2">
-						</div>
-					<div class="col-md-8">
-                    <div class="card-body">
-					<h3 class="card-title" style="color: white;"><?php echo $dataWorker['nama']; ?></h3>
-					<p class="card-text" style="color: white;"><?php echo $dataWorker['usia']; ?></P>
-					<p class="card-text" style="color: white;"><?php echo $dataWorker['domisili']; ?></p>
-    					<a href="<?php echo $dataWorker['link_github']; ?>">To Github</a>
-					</div>
-					</div>
-					</div>
-    				</td>
-    			</tr>
-				</table>
+<tbody>
+           <tr> 
+				<td><img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage2"></td>
+				<td><h3 class="card-title" style="color: white;"><?php echo $dataWorker['nama']; ?></h3></td>
+				<td><p class="card-text" style="color: white;"><?php echo $dataWorker['usia']; ?></P></td>
+				<td><p class="card-text" style="color: white;"><?php echo $dataWorker['domisili']; ?></p></td>
+    			<td><a href="<?php echo $dataWorker['link_github']; ?>">To Github</a></td>
+		   </tr>
+			</tbody>	
 
     		<?php
     		}
     	?>
 
     </table>
-
+	</div>
 </body>
 </html>
 
