@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    if ($_SESSION['loggedin'] == 'true') {
+        ?>
+    
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,14 +18,10 @@
 <?php
 	
 	include "koneksi.php";
-	session_start();
+
 	
     $id = $_SESSION['id'];
 	
-	$query = "SELECT bidang FROM users WHERE id = '$id'";
-    $sql = mysqli_query($koneksi, $query) or die (mysqli_error($koneksi));
-    $fetched = mysqli_fetch_array($sql);
-    $bidang = $fetched['bidang'];
 ?>
 
 <div class="container">
@@ -28,7 +29,7 @@
 <form action="simpanbidang.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Bidang :</label>
-            <select class="form-select form-select-sm form-control" name="bidang"  placeholder= <?php echo $bidang; ?>required>
+            <select class="form-select form-select-sm form-control" name="editbidang" required>
                 <option value="">Pilih Bidang</option>
                 <option value="Web Developer">Web Developer</option>
                 <option value="Desktop Developer">Desktop Developer</option>
@@ -39,3 +40,8 @@
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>
+<?php
+    }else{
+        header("location:login.php");
+    }
+?>

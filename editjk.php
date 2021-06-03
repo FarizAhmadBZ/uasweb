@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if ($_SESSION['loggedin'] == 'true') {
+        ?>
+    
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -13,7 +19,7 @@
 <?php
 	
 	include "koneksi.php";
-	session_start();
+
 	
     $id = $_SESSION['id'];
 	
@@ -32,3 +38,9 @@
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>
+
+<?php
+    }else{
+        header("location:login.php");
+    }
+?>

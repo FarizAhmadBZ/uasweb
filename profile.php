@@ -1,3 +1,10 @@
+<?php
+    session_Start();
+    
+    if ($_SESSION['loggedin'] == 'true') {
+        ?>
+    
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -14,7 +21,6 @@
 <body>
 
 <?php
-session_Start();
 include "koneksi.php";
 $id = $_SESSION['id'];
 
@@ -89,8 +95,25 @@ $bidang = $fetched['bidang'];
             <label>Bidang : <?php echo $bidang; ?> <a class = "editbutton" href = "editbidang.php">(edit)</a></label>
         </div>
 
-        <button class="tombol" onclick="location.href='worker.php'">Kembali</button>
+
+        <script>
+            function konfirmasi() {
+                var varKonfirmasi = confirm("Anda yakin ingin menghapus akun?");
+                if(varKonfirmasi == true){
+                    location.href='deleteaccount.php';
+                }
+            }
+        </script>
+
+        <button class="tombol" onclick="location.href='worker.php'">Kembali</button> <button class="tombol" onclick="konfirmasi()">Hapus Akun</button>
 
 </body>
 
 </html>
+<?php
+
+    }else{
+        header("location:login.php");
+    }
+
+?>

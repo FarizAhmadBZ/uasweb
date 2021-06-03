@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if ($_SESSION['loggedin'] == 'true') {
+        ?>
+    
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -12,7 +19,7 @@
 <body>
 <?php
 	include "koneksi.php";
-	session_start();
+	
     $id = $_SESSION['id'];
 	$query = "SELECT gambar FROM users WHERE id = '$id'";
     $sql = mysqli_query($koneksi, $query) or die (mysqli_error($koneksi));
@@ -28,3 +35,9 @@
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>
+
+<?php
+    }else{
+        header("location:login.php");
+    }
+?>
