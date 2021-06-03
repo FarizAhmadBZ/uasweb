@@ -19,9 +19,19 @@ $password3 = $fetched['password'];
 
 if ($password2 == $password3) {
 if ($password == $password1) {
+	mysqli_autocommit($koneksi, FALSE);
+	mysqli_begin_transaction($koneksi);
 $sql = "call editpassword('$id', '$password');";
 $hasil = mysqli_query($koneksi, $sql);
-echo "<script>alert('Berhasil ganti password!'); document.location = 'profile.php'</script>";
+	if ($hasil) {
+		mysqli_commit($koneksi);
+    	mysqli_autocommit($koneksi, TRUE);
+		echo "<script>alert('Berhasil ganti password!'); document.location = 'profile.php'</script>";
+	}else{
+		mysqli_rollback($koneksi);
+    	mysqli_autocommit($koneksi, TRUE);
+		echo "<script>alert('Gagal ganti password!'); document.location = 'editpassword.php'</script>";
+	}
 }
 else {
 echo "<script>alert('password dan konfirmasi password berbeda!'); document.location = 'editpassword.php'</script>";

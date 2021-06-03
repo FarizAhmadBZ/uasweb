@@ -61,15 +61,11 @@ $bidang = $fetched['bidang'];
 ?>
 
 <div class="container">
-<<<<<<< HEAD
-<h2>Profile</h2>
-<form action="" method="POST" enctype="multipart/form-data">
-=======
-<h2>Form Registrasi</h2>
 
->>>>>>> 591f27c2d9f60a317f70db5f42f5793707456b16
-        <div class="form-group">
-            <label><img src = <?php echo $gambar?> align = "middle"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>
+<h2>Profile</h2>
+
+        <div class="form-group workerimagecontainer">
+            <label><img src = "<?php echo $gambar;?>" align = "middle"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>
         </div>
 	    <div class="form-group">
             <label>Nama: <?php echo $nama; ?> <a class = "editbutton" href = "editnama.php">(edit)</a></label>
@@ -93,7 +89,7 @@ $bidang = $fetched['bidang'];
             <label>Bidang : <?php echo $bidang; ?> <a class = "editbutton" href = "editbidang.php">(edit)</a></label>
         </div>
 
-        <button onclick="location.href='worker.php'" class = "tombol">Batal</button><button class="tombol">Submit</button>
+        <button class="tombol" onclick="location.href='worker.php'">Kembali</button>
 
 </body>
 

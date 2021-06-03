@@ -76,7 +76,7 @@ body {
     width: auto;
 }
 
-#profile {
+.profile {
     background: linear-gradient(267.93deg, #63A1FF 11.94%, rgba(51, 145, 255, 0) 67.03%), #6D48FF;
     padding: 20px;
     border-radius: 10px;

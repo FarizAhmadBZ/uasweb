@@ -68,7 +68,7 @@
     			<tr>
     				<td>
 						
-					<div id="profile" align="left">
+					<div class="profile" align="left">
                 	<div class="row g-0">
 						<div class="col-md-4">
                         	<img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage2">

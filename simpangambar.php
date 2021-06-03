@@ -16,16 +16,21 @@ $filename = $randomNum.".png";
 $tempname = $_FILES["editgambar"]["tmp_name"];
 $folder = "uploaded/".$filename;
 
-move_uploaded_file($tempname, $folder);
+mysqli_autocommit($koneksi, FALSE);
+mysqli_begin_transaction($koneksi);
 
 $sql = "call editgambar('$id', '$folder');";
 
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-echo "<script>alert('Berhasil mengganti gambar!'); document.location = 'profile.php'</script>";
-    echo "Berhasil";
+	mysqli_commit($koneksi);
+    mysqli_autocommit($koneksi, TRUE);
+	move_uploaded_file($tempname, $folder);
+	echo "<script>alert('Berhasil mengganti gambar!'); document.location = 'profile.php'</script>";
   }else {
+  	mysqli_rollback($koneksi);
+    mysqli_autocommit($koneksi, TRUE);
 echo "<script>alert('Gagal mengganti gambar!'); document.location = 'editgambar.php'</script>";
   }
 }

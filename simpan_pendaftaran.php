@@ -23,6 +23,9 @@ if (isset($_POST['submit'])) {
   $tempname = $_FILES["gambar"]["tmp_name"];
   $folder = "uploaded/".$filename;
 
+  mysqli_autocommit($koneksi, FALSE);
+  mysqli_begin_transaction($koneksi);
+
   $cekEmail = "SELECT * FROM users WHERE email = '$email';";
   $hasilCekEmail = mysqli_query($koneksi, $cekEmail);
   $jumlahCekEmail = mysqli_num_rows($hasilCekEmail);
@@ -36,8 +39,12 @@ if (isset($_POST['submit'])) {
 
     if ($hasil) {
       echo "<script>alert('Berhasil mendaftarkan akun'); document.location = 'login.php'</script>";
+      mysqli_commit($koneksi);
+      mysqli_autocommit($koneksi, TRUE);
     }else {
       echo "<script>alert('Gagal mendaftarkan akun'); document.location = 'registrasi.php'</script>";
+      mysqli_rollback($koneksi);
+      mysqli_autocommit($koneksi, TRUE);
     }
   }
 
