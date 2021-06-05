@@ -10,7 +10,14 @@ if (isset($_POST['submit'])) {
   $email = $_POST['email'];
   $linkGit = $_POST['linkGit'];
   $pw = $_POST['pw'];
-  $bidang = $_POST['bidang'];
+
+  $posdeskripsi = $_POST['deskripsi'];
+  $desc = nl2br($posdeskripsi);
+  $bidang = "";
+  foreach ($_POST['bidang'] as $chkbx) {
+      $bidang .= $chkbx.", ";
+    }
+  $bidang = substr($bidang, 0, -2);
   
 
   $randomNum1 = rand(1111, 9999);
@@ -33,7 +40,7 @@ if (isset($_POST['submit'])) {
     echo "<script>alert('EMAIL SUDAH TERPAKAI'); document.location = 'registrasi.php'</script>";
   }else{
     move_uploaded_file($tempname, $folder);
-    $sql = "CALL registrasi('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang');";
+    $sql = "CALL registrasi('$nama', '$jk', '$tglLahir', '$domisili', '$email', '$linkGit', '$pw', '$folder', '$bidang', '$desc');";
 
     $hasil = mysqli_query($koneksi, $sql);
 

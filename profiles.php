@@ -40,6 +40,7 @@ $domisili = $fetched['domisili'];
 $email = $fetched['email'];
 $github = $fetched['link_github'];
 $bidang = $fetched['bidang'];
+$desc = $fetched['deskripsi'];
 
 ?>
 
@@ -77,6 +78,10 @@ $bidang = $fetched['bidang'];
 
         <div class="form-group">
             <label>Bidang : <?php echo $bidang; ?> </label>
+        </div>
+        <div class="form-group">
+            <label>Deskripsi : </label>
+            <p><?php echo $desc; ?></p>
         </div>
         <center>
             <button class="tombol" onclick="window.history.back();">Kembali</button>    

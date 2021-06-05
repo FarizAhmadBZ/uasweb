@@ -50,15 +50,35 @@
             <input type="file" name="gambar"  accept="image/png, image/jpeg" class="form-control" placeholder="Masukan Gambar" required/>
         </div>
         <div class="form-group">
-            <label>Bidang :</label>
-            <select class="form-select form-select-sm form-control" name="bidang" required>
-                <option value="">Pilih Bidang</option>
-                <option value="Web Developer">Web Developer</option>
-                <option value="Desktop Developer">Desktop Developer</option>
-                <option value="Mobile Developer">Mobile Developer</option>
-                <option value="IT Consultant">IT Consultant</option>
-                <option value="Database Engineer">Database Engineer</option>
-            </select>
+            <label>Bidang:</label>
+            <div class="form-check">
+                <input type="Checkbox" name="bidang[]" class="form-check-input" id="chkWeb" value="Web Developer">
+                <label class="form-check-label" for="chkWeb">Web Developer</label>
+            </div>
+
+            <div class="form-check">
+                <input type="Checkbox" name="bidang[]" class="form-check-input" id="chkDesk" value="Desktop Developer">
+                <label class="form-check-label" for="chkDesk">Desktop Developer</label>
+            </div>
+                
+            <div class="form-check">
+                <input type="Checkbox" name="bidang[]" class="form-check-input" id="chkMobile" value="Mobile Developer">
+                <label class="form-check-label" for="chkMobile">Mobile Developer</label>
+            </div>
+
+            <div class="form-check">
+                <input type="Checkbox" name="bidang[]" class="form-check-input" id="chkIT" value="IT Consultant">
+                <label class="form-check-label" for="chkIT">IT Consultant</label>
+            </div>
+
+            <div class="form-check">
+                <input type="Checkbox" name="bidang[]" class="form-check-input" id="chkDB" value="Database Engineer">
+                <label class="form-check-label" for="chkDB">Database Engineer</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Deskripsi:</label>
+            <textarea class="form-control" name="deskripsi" placeholder="Deskripsi" maxlength="1000" rows="3" required style="white-space: pre-wrap; "></textarea>
         </div>
         
 
