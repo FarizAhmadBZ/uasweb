@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if (isset($_SESSION['loggedin'])) {
+    header("location:worker.php");
+  }else{
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,13 +44,13 @@
             <div class="mb-3 row">
             <label for="inputEmail" class="sr-only">Email</label>
             
-                    <input type="text" id="inputEmail" class="form-control" name="email">
+                    <input type="text" id="inputEmail" class="form-control" name="email" required>
                 
             </div>
             <div class="mb-3 row">
             <label for="inputPassword" class="sr-only">Password</label>
                 
-                    <input type="password" class="form-control" id="inputPassword" name="pw">
+                    <input type="password" class="form-control" id="inputPassword" name="pw" required>
                 
             </div>
 
@@ -78,3 +86,7 @@
   }
 </script>
 </html>
+
+<?php
+  }
+?>

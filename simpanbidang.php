@@ -1,32 +1,27 @@
 <?php
 
-session_start();
+	session_start();
 
-if (isset($_POST['submit'])) {
+	if (isset($_POST['submit'])) {
 	
-include 'koneksi.php';
+		include 'koneksi.php';
 
-$id = $_SESSION['id'];
+		$id = $_SESSION['id'];
+		$bidang = "";
 
-mysqli_autocommit($koneksi, FALSE);
-mysqli_begin_transaction($koneksi);
+		foreach ($_POST['bidang'] as $chkbx) {
+				$bidang .= $chkbx.", ";
+			}
+		$bidang = substr($bidang, 0, -2);
 
-$bidang = $_POST['editbidang'];
+		$sql = "call editbidang('$id', '$bidang');";
 
-$sql = "call editbidang('$id', '$bidang');";
+		$hasil = mysqli_query($koneksi, $sql);
 
-$hasil = mysqli_query($koneksi, $sql);
-
-if ($hasil) {
-	mysqli_commit($koneksi);
-    mysqli_autocommit($koneksi, TRUE);
-	echo "<script>alert('Berhasil mengganti bidang!'); document.location = 'profile.php'</script>";
-
-}else {
-	mysqli_rollback($koneksi);
-    mysqli_autocommit($koneksi, TRUE);
-	echo "<script>alert('Gagal mengganti bidang!'); document.location = 'editbidang.php'</script>";
-
-}
-}
+		if ($hasil) {
+			echo "<script>alert('Berhasil mengganti bidang!'); document.location = 'profile.php'</script>";
+		}else {
+			echo "<script>alert('Gagal mengganti bidang!'); document.location = 'editbidang.php'</script>";
+		}
+	}
 ?>

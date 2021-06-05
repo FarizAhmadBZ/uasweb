@@ -61,7 +61,7 @@
 		<th>Nama</th>
 		<th>Usia</th>
 		<th>Domisili</th>
-		<th>Link Github</th>
+		<th>Links</th>
       </tr>
     </thead>
     	<?php
@@ -77,7 +77,15 @@
 				<td><h3 class="card-title" style="color: white;"><?php echo $dataWorker['nama']; ?></h3></td>
 				<td><p class="card-text" style="color: white;"><?php echo $dataWorker['usia']; ?></P></td>
 				<td><p class="card-text" style="color: white;"><?php echo $dataWorker['domisili']; ?></p></td>
-    			<td><a href="<?php echo $dataWorker['link_github']; ?>">To Github</a></td>
+    			<td>
+                    <p><a href="<?php echo $dataWorker['link_github']; ?>">To Github</a></p>
+                    <p>
+                        <form action="profiles.php" method="post">
+                            <input type="hidden" name="idProfile" value="<?php echo $dataWorker['id']; ?>">
+                            <input type="submit" name="seeProfile" value="See profile">
+                        </form>
+                    </p>
+                </td>
 		   </tr>
 			</tbody>	
 				

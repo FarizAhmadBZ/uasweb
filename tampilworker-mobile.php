@@ -1,17 +1,17 @@
 <?php
 
-	session_start();
+    session_start();
 
-	if ($_SESSION['loggedin'] == "true") {
-		
+    if ($_SESSION['loggedin'] == "true") {
+        
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mobile Developers</title>
+    <title>IT Consultants</title>
 
-	<link rel="icon" type="image/x-icon" href="icons/itworkicon.png">
+    <link rel="icon" type="image/x-icon" href="icons/itworkicon.png">
     <!--defines page icon -->
 
     <link rel="stylesheet" type="text/css" href="tampilworker.css">
@@ -32,7 +32,7 @@
 </head>
 <body background="images/coding.jpeg">
 
-	<div id="home">
+    <div id="home">
     <nav class="navbar customBackgroundNavbar navbar-expand-sm sticky-top">
         <img src="images/ITWork.png" id="navbarLogo">
         <ul class="navbar-nav ml-auto">
@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light" href="workers.php">
+                <a class="nav-link text-light" href="worker.php">
                     <h4>Workers</h4>
                 </a>
             </li>
@@ -53,46 +53,54 @@
             </li>
         </ul>
     </nav>
-	<center><h2 style="color: white;">OUR IT CONSULTANTS</h2></center>
+    <center><h2 style="color: white;">OUR MOBILE DEVELOPERS</h2></center>
     
-	<table class="table table-hover" style="color: white;">
+    <table class="table table-hover" style="color: white;">
     <thead>
         <th>Gambar</th>
-		<th>Nama</th>
-		<th>Usia</th>
-		<th>Domisili</th>
-		<th>Link Github</th>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Domisili</th>
+        <th>Links</th>
       </tr>
     </thead>
-    	
-    	<?php
-    		include "koneksi.php";
-    		$sql = "select * from showmobile";
-    		$query = mysqli_query($koneksi, $sql);
-    		while($dataWorker = mysqli_fetch_assoc($query)){
-    		?>
-<tbody>
+        <?php
+        
+            include "koneksi.php";
+            $sql = "select * from showmobile;";
+            $query = mysqli_query($koneksi, $sql);
+            while($dataWorker = mysqli_fetch_assoc($query)){
+            ?>
+            <tbody>
            <tr> 
-				<td><img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage2"></td>
-				<td><h3 class="card-title" style="color: white;"><?php echo $dataWorker['nama']; ?></h3></td>
-				<td><p class="card-text" style="color: white;"><?php echo $dataWorker['usia']; ?></P></td>
-				<td><p class="card-text" style="color: white;"><?php echo $dataWorker['domisili']; ?></p></td>
-    			<td><a href="<?php echo $dataWorker['link_github']; ?>">To Github</a></td>
-		   </tr>
-			</tbody>	
-
-    		<?php
-    		}
-    	?>
+                <td><img src="<?php echo $dataWorker['gambar']; ?>" class="workerimage2"></td>
+                <td><h3 class="card-title" style="color: white;"><?php echo $dataWorker['nama']; ?></h3></td>
+                <td><p class="card-text" style="color: white;"><?php echo $dataWorker['usia']; ?></P></td>
+                <td><p class="card-text" style="color: white;"><?php echo $dataWorker['domisili']; ?></p></td>
+                <td>
+                    <p><a href="<?php echo $dataWorker['link_github']; ?>">To Github</a></p>
+                    <p>
+                        <form action="profiles.php" method="post">
+                            <input type="hidden" name="idProfile" value="<?php echo $dataWorker['id']; ?>">
+                            <input type="submit" name="seeProfile" value="See profile">
+                        </form>
+                    </p>
+                </td>
+           </tr>
+            </tbody>    
+                
+            <?php
+            }
+        ?>
 
     </table>
-	</div>
+    </div>
 </body>
 </html>
 
 <?php
-	}
-	else{
-		header("location:login.php");
-	}
+    }
+    else{
+        header("location:login.php");
+    }
 ?>
