@@ -36,6 +36,7 @@ $domisili = $fetched['domisili'];
 $email = $fetched['email'];
 $github = $fetched['link_github'];
 $bidang = $fetched['bidang'];
+$deskripsi = $fetched['deskripsi'];
 
 ?>
 
@@ -74,7 +75,9 @@ $bidang = $fetched['bidang'];
         <div class="form-group">
             <label>Bidang : <?php echo $bidang; ?> <a class = "editbutton" href = "editbidang.php">(edit)</a></label>
         </div>
-
+        <div class="form-group">
+            <label>Deskripsi : <p><?php echo $deskripsi; ?></p> <a class = "editbutton" href = "editdeskripsi.php">(edit)</a></label>
+        </div>
 
         <script>
             function konfirmasi() {
