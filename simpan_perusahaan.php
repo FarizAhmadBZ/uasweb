@@ -5,15 +5,13 @@ if (isset($_POST['submit'])) {
   include 'koneksi.php';
   $email = $_POST['email'];
   $nama = $_POST['nama'];
-  $posdeskripsi = $_POST['deskripsi'];
-  $desc = nl2br($posdeskripsi);
   $alamat = $_POST['alamat'];
   $pj = $_POST['pj'];
-  $posspecs= $_POST['specs'];
-  $specs = nl2br($posspecs);
+  $spek= $_POST['spek'];
   $pw = $_POST['pw'];
 
-  
+  $posdeskripsi = $_POST['deskripsi'];
+  $desc = nl2br($posdeskripsi);
 
   $randomNum1 = rand(1111, 9999);
   $randomNum2 = rand(1111, 9999);
@@ -35,7 +33,7 @@ if (isset($_POST['submit'])) {
     echo "<script>alert('EMAIL SUDAH TERPAKAI'); document.location = 'registrasi_perusahaan.php'</script>";
   }else{
     move_uploaded_file($tempname, $folder);
-    $sql = "CALL registrasip('$email', '$nama', '$desc', '$alamat',  '$pj', '$pw', '$specs', '$folder',  );";
+    $sql = "CALL registrasip('$email', '$nama', '$desc', '$alamat',  '$pj', '$pw', '$spek', '$folder');";
 
     $hasil = mysqli_query($koneksi, $sql);
 

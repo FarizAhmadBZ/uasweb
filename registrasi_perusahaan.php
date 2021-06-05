@@ -12,7 +12,7 @@
 <body>
 <div class="container">
 <h2>Form Registrasi Perusahaan</h2>
-<form action="simpan_pendaftaran.php" method="POST" enctype="multipart/form-data">
+<form action="simpan_perusahaan.php" method="POST" enctype="multipart/form-data">
 	   <div class="form-group">
             <label>Email:</label>
             <input type="email" name="email" class="form-control" placeholder="Masukan Email" required/>
@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <label>Spesifikasi:</label>
-            <textarea class="form-control" name="specs" placeholder="Spesifikasi" maxlength="1000" rows="3" required style="white-space: pre-wrap; "></textarea>
+            <textarea class="form-control" name="spek" placeholder="Spesifikasi" maxlength="1000" rows="3" required style="white-space: pre-wrap; "></textarea>
         </div>
         <div class="form-group">
             <label>Gambar:</label>
