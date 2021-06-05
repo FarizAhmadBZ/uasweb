@@ -67,7 +67,7 @@
         <?php
         
             include "koneksi.php";
-            $sql = "select * from showdekstop";
+            $sql = "select * from showdesktop";
             $query = mysqli_query($koneksi, $sql);
             while($dataWorker = mysqli_fetch_assoc($query)){
             ?>
