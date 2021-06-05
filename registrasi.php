@@ -80,16 +80,13 @@
             <label>Deskripsi:</label>
             <textarea class="form-control" name="deskripsi" placeholder="Deskripsi" maxlength="1000" rows="3" required style="white-space: pre-wrap; "></textarea>
         </div>
-        
-
-
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         <p> Sudah punya akun?
                   <a href="login.php">Login di sini</a>
                </p>
 
     </form>
-    
+</div>
 </body>
 
 </html>
