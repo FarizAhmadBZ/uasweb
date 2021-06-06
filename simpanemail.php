@@ -12,7 +12,8 @@ if (isset($_SESSION['loggedin'])) {
 
 		$sqlCekEmail = "SELECT email FROM users where email = '$email' ";
 		$hasilCek = mysqli_query($koneksi, $sqlCekEmail);
-		if ($hasilCek) {
+		$jumlahCekEmail = mysqli_num_rows($hasilCek);
+		if ($jumlahCekEmail > 0) {
 			echo "<script>alert('Email sudah ada yang menggunakan!'); document.location = 'editemail.php'</script>";
 		}else{
 			$sql = "call editemail('$id', '$email');";
