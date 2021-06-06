@@ -26,19 +26,19 @@ $hasil = mysqli_query($koneksi, $sql);
 	if ($hasil) {
 		mysqli_commit($koneksi);
     	mysqli_autocommit($koneksi, TRUE);
-		echo "<script>alert('Berhasil ganti password!'); document.location = 'profile.php'</script>";
+		echo "<script>alert('Berhasil ganti password!'); document.location = 'profilep.php'</script>";
 	}else{
 		mysqli_rollback($koneksi);
     	mysqli_autocommit($koneksi, TRUE);
-		echo "<script>alert('Gagal ganti password!'); document.location = 'editpassword.php'</script>";
+		echo "<script>alert('Gagal ganti password!'); document.location = 'editpasswordp.php'</script>";
 	}
 }
 else {
-echo "<script>alert('password dan konfirmasi password berbeda!'); document.location = 'editpassword.php'</script>";
+echo "<script>alert('password dan konfirmasi password berbeda!'); document.location = 'editpasswordp.php'</script>";
 }
 }
 else {
-echo "<script>alert('password lama salah!'); document.location = 'editpassword.php'</script>";
+echo "<script>alert('password lama salah!'); document.location = 'editpasswordp.php'</script>";
 }
 }
 ?>

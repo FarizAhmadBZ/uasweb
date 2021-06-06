@@ -11,18 +11,18 @@ $id = $_SESSION['id'];
 $pj = $_POST['editpj'];
 mysqli_autocommit($koneksi, FALSE);
 mysqli_begin_transaction($koneksi);
-$sql = "call editenanggungjawabp('$id', '$pj');";
+$sql = "call editpenanggungjawabp('$id', '$pj');";
 
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
 	mysqli_commit($koneksi);
     mysqli_autocommit($koneksi, TRUE);
-echo "<script>alert('Berhasil mengganti nama penanggungjawab!'); document.location = 'profile.php'</script>";
+echo "<script>alert('Berhasil mengganti nama penanggungjawab!'); document.location = 'profilep.php'</script>";
   }else {
   	mysqli_rollback($koneksi);
     mysqli_autocommit($koneksi, TRUE);
-echo "<script>alert('Gagal mengganti nama penanggungjawab!'); document.location = 'editnama.php'</script>";
+echo "<script>alert('Gagal mengganti nama penanggungjawab!'); document.location = 'editpenanggungjawabp.php'</script>";
   }
 }
 ?>

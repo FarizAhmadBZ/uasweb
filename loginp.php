@@ -59,6 +59,7 @@
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
             <label>
+			<a href="login.php">Log In As Worker</a> <br/>
             <a href="registrasi_perusahaan.php">Don't Have an Account? Register</a>
             </label>
             </div>

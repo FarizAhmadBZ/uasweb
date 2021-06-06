@@ -27,11 +27,11 @@ if ($hasil) {
 	mysqli_commit($koneksi);
     mysqli_autocommit($koneksi, TRUE);
 	move_uploaded_file($tempname, $folder);
-	echo "<script>alert('Berhasil mengganti gambar!'); document.location = 'profile.php'</script>";
+	echo "<script>alert('Berhasil mengganti gambar!'); document.location = 'profilep.php'</script>";
   }else {
   	mysqli_rollback($koneksi);
     mysqli_autocommit($koneksi, TRUE);
-echo "<script>alert('Gagal mengganti gambar!'); document.location = 'editgambar.php'</script>";
+echo "<script>alert('Gagal mengganti gambar!'); document.location = 'editgambarp.php'</script>";
   }
 }
 ?>

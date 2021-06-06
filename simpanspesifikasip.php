@@ -16,9 +16,9 @@ $sql = "call editspesifikasip('$id', '$spek');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-echo "<script>alert('Berhasil mengganti spesifikasi!'); document.location = 'profile.php'</script>";
+echo "<script>alert('Berhasil mengganti spesifikasi!'); document.location = 'profilep.php'</script>";
   }else {
-echo "<script>alert('Gagal mengganti spesifikasi!'); document.location = 'editgithub.php'</script>";
+echo "<script>alert('Gagal mengganti spesifikasi!'); document.location = 'editspesifikasip.php'</script>";
   }
 }
 ?>

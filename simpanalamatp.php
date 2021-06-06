@@ -18,11 +18,11 @@ $hasil = mysqli_query($koneksi, $sql);
 if ($hasil) {
 	mysqli_commit($koneksi);
     mysqli_autocommit($koneksi, TRUE);
-echo "<script>alert('Berhasil mengganti alamat!'); document.location = 'profile.php'</script>";
+echo "<script>alert('Berhasil mengganti alamat!'); document.location = 'profilep.php'</script>";
   }else {
   	mysqli_rollback($koneksi);
     mysqli_autocommit($koneksi, TRUE);
-echo "<script>alert('Gagal mengganti alamat!'); document.location = 'editnama.php'</script>";
+echo "<script>alert('Gagal mengganti alamat!'); document.location = 'editnamap.php'</script>";
   }
 }
 ?>

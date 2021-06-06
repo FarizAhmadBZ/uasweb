@@ -16,9 +16,9 @@ $sql = "call editdeskripsip('$id', '$desc');";
 $hasil = mysqli_query($koneksi, $sql);
 
 if ($hasil) {
-echo "<script>alert('Berhasil mengganti deskripsi akun!'); document.location = 'profile.php'</script>";
+echo "<script>alert('Berhasil mengganti deskripsi akun!'); document.location = 'profilep.php'</script>";
   }else {
-echo "<script>alert('Gagal mengganti deskripsi akun!'); document.location = 'editgithub.php'</script>";
+echo "<script>alert('Gagal mengganti deskripsi akun!'); document.location = 'editdeskripsip.php'</script>";
   }
 }
 ?>

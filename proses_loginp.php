@@ -11,7 +11,7 @@
     $pw = $_POST['pw'];
 
     //matchkan dengan database
-    $query = mysqli_query($koneksi,"SELECT * FROM users WHERE email = '$email' AND password = '$pw' ");
+    $query = mysqli_query($koneksi,"SELECT * FROM perusahaan WHERE email = '$email' AND password = '$pw' ");
     //mysqli_query()
     $jum = mysqli_num_rows($query);
     echo "<br>";
