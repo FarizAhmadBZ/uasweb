@@ -46,6 +46,7 @@
             <input type="file" name="gambar"  accept="image/png, image/jpeg" class="form-control" placeholder="Masukan Gambar" required/>
         </div>
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+		<a href="registrasi.php">Registrasi sebagai worker</a>
         <p> Sudah punya akun?
                   <a href="loginp.php">Login di sini</a>
                </p>

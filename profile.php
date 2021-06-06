@@ -1,4 +1,4 @@
-<?php
+	<?php
     session_Start();
     
     if ($_SESSION['loggedin'] == 'true') {
@@ -75,6 +75,9 @@ $deskripsi = $fetched['deskripsi'];
         <div class="form-group">
             <label>Bidang : <?php echo $bidang; ?> <a class = "editbutton" href = "editbidang.php">(edit)</a></label>
         </div>
+		<div class="form-group">
+			<label>Password : ****** <a class = "editbutton" href ="editpassword.php">(edit)</a></label>
+		</div>
         <div class="form-group">
             <label>Deskripsi : <p><?php echo $deskripsi; ?></p> <a class = "editbutton" href = "editdeskripsi.php">(edit)</a></label>
         </div>

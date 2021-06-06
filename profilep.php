@@ -57,6 +57,9 @@ $desc = $fetched['deskripsi'];
 	    <div class="form-group">
             <label>Email: <?php echo $email; ?> <a class = "editbutton" href = "editemailp.php">(edit)</a></label>
         </div>
+		<div class="form-group">
+			<label>Password : ****** <a class = "editbutton" href ="editpasswordp.php">(edit)</a></label>
+		</div>
         <div class="form-group">
             <label>Spesifikasi: <?php echo $spek; ?> <a class = "editbutton" href = "editspesifikasip.php">(edit)</a></label>
         </div>
