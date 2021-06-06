@@ -25,7 +25,7 @@
         $_SESSION['loggedin'] = 'true';
         $_SESSION['id'] = $fetched['id'];
         $_SESSION['user'] = $fetched['nama'];
-        $_SESSION['tipeAkun'] = "company";
+        $_SESSION['tipeAkun'] = "worker";
         // echo $_SESSION['loggedin']."<br>";
         // echo $_SESSION['id']."<br>";
         // echo $_SESSION['user']."<br>";

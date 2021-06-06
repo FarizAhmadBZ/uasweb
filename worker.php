@@ -175,23 +175,23 @@
                         <img src="icons/down-arrow.svg" class="scrollDownButton">
                     </a>
                 </p>
-    </div>
+        </div>
     <table id="listOfProfiles" align="center">
     <tr>
         <td>
         <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/gojek.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Gojek Indonesia</h5>
-        <p class="card-text" style="color: white;">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
-        </div>
-        </div>
-    </div>
-    </div>
+            <div class="row g-0">
+                 <div class="col-md-4">
+                    <img src="images/gojek.jpg" class="workerimage2">
+                </div>
+                <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Gojek Indonesia</h5>
+                    <p class="card-text" style="color: white;">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
+                 </div>
+                </div>
+                </div>
+            </div>
         </td>
         <td>
         <div id="profile" align="left">
