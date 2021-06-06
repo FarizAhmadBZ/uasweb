@@ -77,93 +77,96 @@
     </div>
 
     <table id="listOfProfiles" align="center">
-    <tr>
-        
-        <td>
-            <a href="tampilworker-web.php">
-            <div id="profile" align="left">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/web designer1.jpg" class="workerimage">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title" style="color: white;">Web Developer</h3>
+        <tr> 
+            <td>
+                <a href="tampilworker-web.php">
+                    <div id="profile" align="left">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/web designer1.jpg" class="workerimage">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="color: white;">Web Developer</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            </a>
-        </td>
-        <td>
-            <a href="tampilworker-desktop.php">
-            <div id="profile" align="left">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/desktop.jpg" class="workerimage">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title" style="color: white;">Desktop Developer</h3>
+                </a>
+            </td>
+            <td>
+                <a href="tampilworker-desktop.php">
+                    <div id="profile" align="left">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/desktop.jpg" class="workerimage">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="color: white;">Desktop Developer</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            </a>
-        </td>
-        <td>
-            <a href="tampilworker-mobile.php">
-            <div id="profile" align="left">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/mobile.jpg" class="workerimage">
-                </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title" style="color: white;">Mobile Developer</h3>
+                </a>
+            </td>
+            <td>
+                <a href="tampilworker-mobile.php">
+                    <div id="profile" align="left">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/mobile.jpg" class="workerimage">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="color: white;">Mobile Developer</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="tampilworker-consultant.php">
-            <div id="profile" align="left">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/PEXELS2.jpg" class="workerimage">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title" style="color: white;">IT Consultant</h3>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="tampilworker-consultant.php">
+                    <div id="profile" align="left">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/PEXELS2.jpg" class="workerimage">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="color: white;">IT Consultant</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        </td>
-        <td>
-            <a href="tampilworker-database.php">
-            <div id="profile" align="left">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/database engineer.jpg" class="workerimage">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h3 class="card-title" style="color: white;">Database Engineer</h3>
+                </a>
+            </td>
+            <td>
+                <a href="tampilworker-database.php">
+                    <div id="profile" align="left">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/database engineer.jpg" class="workerimage">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title" style="color: white;">Database Engineer</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </a>
-        </td>
-    </tr>
+                </a>
+            </td>
+        </tr>
     </table>
-    <div id="workers" style="height: 40px;"></div>
+    <?php
+        if ($_SESSION['tipeAkun'] == "worker") {
+        ?>
+
+        <div id="companies" style="height: 40px;"></div>
         <div class="jumbotron bg-transparent text-light text-center">
             <h1 class="display-4">
                Recommended Company
@@ -177,99 +180,103 @@
                 </p>
     </div>
     <table id="listOfProfiles" align="center">
-    <tr>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/gojek.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Gojek Indonesia</h5>
-        <p class="card-text" style="color: white;">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/tokopedia.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Tokopedia Indonesia</h5>
-        <p class="card-text" style="color: white;">Tokopedia merupakan perusahaan perdagangan elektronik atau sering disebut toko daring dan mendukung UMKM yang ada di Indonesia.</p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-       <td>
-       <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/sagara.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Sagara Technology</h5>
-        <p class="card-text" style="color: white;">Sagara Technology merupakan sebuah perusahaan teknologi yang bergerak di bidang pengembangan website dan aplikasi. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-    </tr>
-<tr>
-<td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/garena.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Garena Indonesia</h5>
-        <p class="card-text" style="color: white;">Garena adalah sebuah platform hiburan digital, yang mengembangkan dan mempublikasikan kontan digital PC dan peranti bergerak daring di Asia Tenggara dan Taiwan. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/bukalapak.png" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Bukalapak Indonesia</h5>
-        <p class="card-text" style="color:white;">Bukalapak merupakan salah satu perusahaan e-commerce di Indonesia yang bertujuan untuk membantu UMKM mengembangkan bisnis mereka. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/lintasarta.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Lintasarta Indonesia</h5>
-        <p class="card-text" style="color: white;">Lintasarta (PT Aplikanusa Lintasarta) adalah perusahaan Indonesia yang bergerak di bidang penyedia jasa komunikasi data, internet & IT Services. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-</tr>
+        <tr>
+            <td>
+                <div id="profile" align="left">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/gojek.jpg" class="workerimage2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Gojek Indonesia</h5>
+                                <p class="card-text" style="color: white;">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div id="profile" align="left">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/tokopedia.jpg" class="workerimage2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title" style="color: white;">Tokopedia Indonesia</h5>
+                            <p class="card-text" style="color: white;">Tokopedia merupakan perusahaan perdagangan elektronik atau sering disebut toko daring dan mendukung UMKM yang ada di Indonesia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div id="profile" align="left">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/sagara.jpg" class="workerimage2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Sagara Technology</h5>
+                                <p class="card-text" style="color: white;">Sagara Technology merupakan sebuah perusahaan teknologi yang bergerak di bidang pengembangan website dan aplikasi. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </tr>
+        <tr>
+            <td>
+                <div id="profile" align="left">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/garena.jpg" class="workerimage2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Garena Indonesia</h5>
+                                <p class="card-text" style="color: white;">Garena adalah sebuah platform hiburan digital, yang mengembangkan dan mempublikasikan kontan digital PC dan peranti bergerak daring di Asia Tenggara dan Taiwan. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div id="profile" align="left">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/bukalapak.png" class="workerimage2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Bukalapak Indonesia</h5>
+                                <p class="card-text" style="color:white;">Bukalapak merupakan salah satu perusahaan e-commerce di Indonesia yang bertujuan untuk membantu UMKM mengembangkan bisnis mereka. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div id="profile" align="left">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/lintasarta.jpg" class="workerimage2">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: white;">Lintasarta Indonesia</h5>
+                                <p class="card-text" style="color: white;">Lintasarta (PT Aplikanusa Lintasarta) adalah perusahaan Indonesia yang bergerak di bidang penyedia jasa komunikasi data, internet & IT Services. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+        <?php
+        }
+    ?>
 </body>
 </html>
 
