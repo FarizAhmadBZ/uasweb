@@ -8,7 +8,7 @@ include 'koneksi.php';
 
 $id = $_SESSION['id'];
 
-$posspek = $_POST['spek'];
+$posspek = $_POST['editspek'];
 $spek = nl2br($posspek);
 
 $sql = "call editspesifikasip('$id', '$spek');";

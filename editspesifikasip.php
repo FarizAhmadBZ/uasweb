@@ -27,15 +27,15 @@
     $sql = mysqli_query($koneksi, $query) or die (mysqli_error($koneksi));
     $fetched = mysqli_fetch_array($sql);
     $spek = $fetched['spesifikasi'];
-    $spek = preg_replace('#<br\s*/?>#i', "", $spesifikasi);
+    $spek = preg_replace('#<br\s*/?>#i', "", $spek);
 ?>
 
 <div class="container">
 <h2>Edit Spesifikasi Perusahaan</h2>
-<form action="simpandeskripsip.php" method="POST" enctype="multipart/form-data">
+<form action="simpanspesifikasip.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Spesifikasi :</label>
-            <textarea class="form-control" name="spesifikasi" maxlength="1000" rows="3" required style="white-space: pre-wrap; "><?php echo $spek;?></textarea>
+            <textarea class="form-control" name="editspek" maxlength="1000" rows="3" required style="white-space: pre-wrap; "><?php echo $spek;?></textarea>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>
