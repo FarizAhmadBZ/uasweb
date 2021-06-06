@@ -31,7 +31,7 @@
 <h2>Edit Gambar</h2>
 <form action="simpangambar.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
-            <label>Gambar sebelumnya : <img src= <?php echo $gambar;?>></label>
+            <label>Gambar sebelumnya : <img src= <?php echo $gambar;?> width="200px" height="300px"></label>
             <input type="file" name="editgambar"  accept="image/png, image/jpeg" class="form-control" placeholder="Masukan Gambar" required/>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
