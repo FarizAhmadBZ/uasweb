@@ -275,7 +275,7 @@
         </tr>
     </table>
     <div>
-        <center><button class="btn btn-primary">See More</button></center>    
+        <center><button onclick="location.href = 'tampilcompany.php'" class="btn btn-primary">See More</button></center>    
     </div>
     
         <?php

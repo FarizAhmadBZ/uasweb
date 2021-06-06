@@ -35,7 +35,7 @@
 $gambar = $fetched['gambar'];
 $nama = $fetched['nama'];
 $alamat = $fetched['alamat'];
-$pj = $fetched['penanggungjawab'];
+$pj = $fetched['penangungjawab'];
 $email = $fetched['email'];
 $spek = $fetched['spesifikasi'];
 $desc = $fetched['deskripsi'];
