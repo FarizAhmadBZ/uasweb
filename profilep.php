@@ -43,7 +43,7 @@ $desc = $fetched['deskripsi'];
 <h2>Profile</h2>
 
         <div class="form-group">
-            <label><img src = "<?php echo $gambar;?>" align = "middle" width="200px" height="300px"><br><a class = "editbutton" href = "editgambar.php">(edit)</a> </label>
+            <label><img src = "<?php echo $gambar;?>" align = "middle" width="200px" height="300px"><br><a class = "editbutton" href = "editgambarp.php">(edit)</a> </label>
         </div>
 	    <div class="form-group">
             <label>Nama Perusahaan: <?php echo $nama; ?> <a class = "editbutton" href = "editnamap.php">(edit)</a></label>
