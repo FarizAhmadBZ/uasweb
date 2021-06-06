@@ -35,7 +35,7 @@
 <form action="simpanpenanggungjawabp.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Nama Penanggungjawab:</label>
-            <input type="text" name="editpj" class="form-control" placeholder= <?php echo $pj; ?> >
+            <input type="text" name="editpj" class="form-control" placeholder= "<?php echo $pj; ?>" required >
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

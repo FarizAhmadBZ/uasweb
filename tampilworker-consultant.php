@@ -3,7 +3,13 @@
 	session_start();
 
 	if ($_SESSION['loggedin'] == "true") {
-		
+		if($_SESSION['tipeAkun'] == "worker") {
+            $urlProfil = "profile.php";
+            }
+            elseIf($_SESSION['tipeAkun'] == "company"){
+            $urlProfil = "profilep.php";
+            }
+        
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +43,7 @@
         <img src="images/ITWork.png" id="navbarLogo">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="profile.php">
+                <a class="nav-link text-light" href="<?php echo $urlProfil;?>">
                     <h4>Profile</h4>
                 </a>
             </li>

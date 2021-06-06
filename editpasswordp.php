@@ -18,33 +18,21 @@
     <link href="registrasi.css" rel="stylesheet">
 </head>
 <body>
-<?php
-	
-	include "koneksi.php";
-
-	
-    $id = $_SESSION['id'];
-	
-	$query = "SELECT password FROM perusahaan WHERE id = '$id'";
-    $sql = mysqli_query($koneksi, $query) or die (mysqli_error($koneksi));
-    $fetched = mysqli_fetch_array($sql);
-    $password = $fetched['password'];
-?>
 
 <div class="container">
 <h2>Edit Password Perusahaan</h2>
 <form action="simpanpasswordp.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Password :</label>
-            <input type="password" name="editpassword" class="form-control" placeholder= "*******" >
+            <input type="password" name="editpassword" class="form-control" placeholder= "Password Baru" required>
         </div>
 		<div class="form-group">
             <label>Konfirmasi Password :</label>
-            <input type="password" name="konfirmasipassword" class="form-control" placeholder= "*******" >
+            <input type="password" name="konfirmasipassword" class="form-control" placeholder= "Konfirmasi Password" required>
         </div>
 		<div class="form-group">
             <label>Password Lama :</label>
-            <input type="password" name="passwordlama" class="form-control" placeholder= "*******" >
+            <input type="password" name="passwordlama" class="form-control" placeholder= "Masukkan Password lamamu" required>
         </div>
 		
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>

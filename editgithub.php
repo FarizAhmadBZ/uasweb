@@ -36,7 +36,7 @@
 <form action="simpangithub.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Link Git Hub :</label>
-            <input type="text" name="editgithub" class="form-control" placeholder= <?php echo $github; ?> >
+            <input type="url" name="editgithub" class="form-control" pattern="https?://github.com/.+" placeholder= "<?php echo $github; ?>" required>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

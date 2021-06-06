@@ -3,6 +3,12 @@
     session_start();
 
     if ($_SESSION['loggedin'] == "true") {
+        if($_SESSION['tipeAkun'] == "worker") {
+            $urlProfil = "profile.php";
+            }
+            elseIf($_SESSION['tipeAkun'] == "company"){
+            $urlProfil = "profilep.php";
+            }
         
 ?>
 
@@ -37,7 +43,7 @@
         <img src="images/ITWork.png" id="navbarLogo">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link text-light" href="profile.php">
+                <a class="nav-link text-light" href="<?php echo $urlProfil;?>">
                     <h4>Profile</h4>
                 </a>
             </li>
@@ -61,36 +67,36 @@
         <th>Nama</th>
         <th>Alamat</th>
         <th>Spesifikasi</th>
+        <th>Profil Lengkap</th>
       </tr>
     </thead>
-        <?php
-        
-            include "koneksi.php";
-            $sql = "select * from perusahaan;";
-            $query = mysqli_query($koneksi, $sql);
-            while($dataJob = mysqli_fetch_assoc($query)){
-            ?>
+       
             <tbody>
-           <tr> 
-                <td><img src="<?php echo $dataJob['gambar']; ?>" class="workerimage2"></td>
-                <td><h3 class="card-title" style="color: white;"><?php echo $dataJob['nama']; ?></h3></td>
-                <td><p class="card-text" style="color: white;"><?php echo $dataJob['alamat']; ?></P></td>
-                <td><p class="card-text" style="color: white;"><?php echo $dataJob['spesifikasi']; ?></p></td>
-                <td>
-                    <p>
-                        <form action="profilesp.php" method="post">
-                            <input type="hidden" name="idProfile" value="<?php echo $dataJob['id']; ?>">
-                            <input type="submit" name="seeProfile" value="See profile">
-                        </form>
-                    </p>
-                </td>
-           </tr>
-            </tbody>    
-                
-            <?php
-            }
-        ?>
-
+                <?php
+        
+                    include "koneksi.php";
+                    $sql = "select * from perusahaan;";
+                    $query = mysqli_query($koneksi, $sql);
+                    while($dataJob = mysqli_fetch_assoc($query)){
+                ?>
+                <tr> 
+                    <td><img src="<?php echo $dataJob['gambar']; ?>" class="workerimage2"></td>
+                    <td><h3 class="card-title" style="color: white;"><?php echo $dataJob['nama']; ?></h3></td>
+                    <td><p class="card-text" style="color: white;"><?php echo $dataJob['alamat']; ?></P></td>
+                    <td><p class="card-text" style="color: white;"><?php echo $dataJob['spesifikasi']; ?></p></td>
+                    <td>
+                        <p>
+                            <form action="profilesp.php" method="post">
+                                <input type="hidden" name="idProfile" value="<?php echo $dataJob['id']; ?>">
+                                <input type="submit" name="seeProfile" value="See profile">
+                            </form>
+                        </p>
+                    </td>
+                </tr>
+                <?php
+                    }
+                ?>
+            </tbody>
     </table>
     </div>
 </body>

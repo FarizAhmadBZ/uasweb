@@ -35,7 +35,7 @@
 <form action="simpannamap.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Nama:</label>
-            <input type="text" name="editnama" class="form-control" placeholder= <?php echo $name; ?> >
+            <input type="text" name="editnama" class="form-control" placeholder= "<?php echo $name; ?>" required>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

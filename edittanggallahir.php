@@ -35,7 +35,7 @@
 <form action="simpantanggallahir.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
 	     <label>Tanggal Lahir : <?php echo $tgllhr; ?> </label>
-	     <input type="date" name="edittgllhr" class="form-control" placeholder= <?php echo $tgllhr; ?> required/>
+	     <input type="date" name="edittgllhr" class="form-control" placeholder= "<?php echo $tgllhr; ?>" required/>
 	    </div> 
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

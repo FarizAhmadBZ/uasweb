@@ -64,7 +64,7 @@
             <a href="registrasi.php">Don't Have an Account? Register</a>
             </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign in</button>
             <p class="mt-5 mb-3 text-muted"> ©ITWork 2021</p>
         </form>
 

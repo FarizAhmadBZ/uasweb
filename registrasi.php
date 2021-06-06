@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <label>Link Github:</label>
-            <input type="text" name="linkGit" class="form-control" placeholder="Masukan Link Github" required/>
+            <input type="url" name="linkGit" class="form-control" pattern="https?://github.com/.+" placeholder="Format: https://github.com/NamaAkun" required/>
         </div>
 	    <div class="form-group">
             <label>Password:</label>

@@ -35,7 +35,7 @@
 <form action="simpanalamatp.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Alamat:</label>
-            <input type="text" name="editalamat" class="form-control" placeholder= <?php echo $alamat; ?> >
+            <input type="text" name="editalamat" class="form-control" placeholder= "<?php echo $alamat; ?>" required>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

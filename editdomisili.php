@@ -35,7 +35,7 @@
 <form action="simpandomisili.php" method="POST" enctype="multipart/form-data">
 	    <div class="form-group">
             <label>Domisili:</label>
-            <input type="text" name="editdmsl" class="form-control" placeholder= <?php echo $dmsl; ?> >
+            <input type="text" name="editdmsl" class="form-control" placeholder= "<?php echo $dmsl; ?>" required>
         </div>
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </body>

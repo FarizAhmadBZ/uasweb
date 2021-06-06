@@ -1,10 +1,13 @@
 <?php
+    if (isset($_POST['submit'])) {
+        # code...
     
+
     include "koneksi.php";
 
-    echo $_POST['email'];
-    echo "<br>";
-    echo $_POST['pw'];
+    // echo $_POST['email'];
+    // echo "<br>";
+    // echo $_POST['pw'];
 
     //Tangkap variabel dari inputan
     $email = $_POST['email'];
@@ -35,7 +38,10 @@
     }
     else
     {
-        header("location:login.php");
+        echo "<script>alert('Akun salah'); document.location = 'login.php';</script>";
         
     }
+}else{
+    echo "<script>window.history.back();</script>";
+}
 ?>
