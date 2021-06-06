@@ -2,6 +2,12 @@
 
     session_start();
     if ($_SESSION['loggedin'] == "true") {
+        if($_SESSION['tipeAkun'] == "worker") {
+            $urlProfil = "profile.php";
+            }
+            elseIf($_SESSION['tipeAkun'] == "company"){
+            $urlProfil = "profilesp.php";
+            }
         ?>
 
 

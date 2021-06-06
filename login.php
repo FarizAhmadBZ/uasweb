@@ -2,6 +2,7 @@
   session_start();
   if (isset($_SESSION['loggedin'])) {
     header("location:worker.php");
+    $_SESSION['tipeAkun'] = "worker";
   }else{
 
 ?>
