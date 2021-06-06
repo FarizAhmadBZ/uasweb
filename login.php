@@ -41,7 +41,7 @@
 <body class="text-center" background="images/coding.jpeg">
         <form class ="form-signin" action="proses_login.php" method="post" id="myForm" onsubmit="return validasi(this)">
         <img class="mb-4" src="icons/itworkicon.png" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <h1 class="h3 mb-3 font-weight-normal">Worker<br />Please sign in</h1>
             <div class="mb-3 row">
             <label for="inputEmail" class="sr-only">Email</label>
             
@@ -65,7 +65,7 @@
             </label>
             </div>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted"> © 2017-2020</p>
+            <p class="mt-5 mb-3 text-muted"> ©ITWork 2021</p>
         </form>
 
 

@@ -180,101 +180,6 @@
                 </p>
         </div>
     <table id="listOfProfiles" align="center">
-<<<<<<< HEAD
-    <tr>
-        <td>
-        <div id="profile" align="left">
-            <div class="row g-0">
-                 <div class="col-md-4">
-                    <img src="images/gojek.jpg" class="workerimage2">
-                </div>
-                <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title" style="color: white;">Gojek Indonesia</h5>
-                    <p class="card-text" style="color: white;">Gojek (sebelumnya ditulis GO-JEK) merupakan sebuah perusahaan teknologi asal Indonesia yang melayani angkutan melalui jasa ojek. </p>
-                 </div>
-                </div>
-                </div>
-            </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/tokopedia.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Tokopedia Indonesia</h5>
-        <p class="card-text" style="color: white;">Tokopedia merupakan perusahaan perdagangan elektronik atau sering disebut toko daring dan mendukung UMKM yang ada di Indonesia.</p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-       <td>
-       <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/sagara.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Sagara Technology</h5>
-        <p class="card-text" style="color: white;">Sagara Technology merupakan sebuah perusahaan teknologi yang bergerak di bidang pengembangan website dan aplikasi. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-    </tr>
-<tr>
-<td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/garena.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Garena Indonesia</h5>
-        <p class="card-text" style="color: white;">Garena adalah sebuah platform hiburan digital, yang mengembangkan dan mempublikasikan kontan digital PC dan peranti bergerak daring di Asia Tenggara dan Taiwan. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/bukalapak.png" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Bukalapak Indonesia</h5>
-        <p class="card-text" style="color:white;">Bukalapak merupakan salah satu perusahaan e-commerce di Indonesia yang bertujuan untuk membantu UMKM mengembangkan bisnis mereka. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-        <td>
-        <div id="profile" align="left">
-        <div class="row g-0">
-         <div class="col-md-4">
-             <img src="images/lintasarta.jpg" class="workerimage2">
-         </div>
-         <div class="col-md-8">
-         <div class="card-body">
-         <h5 class="card-title" style="color: white;">Lintasarta Indonesia</h5>
-        <p class="card-text" style="color: white;">Lintasarta (PT Aplikanusa Lintasarta) adalah perusahaan Indonesia yang bergerak di bidang penyedia jasa komunikasi data, internet & IT Services. </p>
-        </div>
-        </div>
-    </div>
-    </div>
-        </td>
-</tr>
-=======
         <tr>
             <td>
                 <div id="profile" align="left">
@@ -369,10 +274,14 @@
             </td>
         </tr>
     </table>
+    <div>
+        <center><button class="btn btn-primary">See More</button></center>    
+    </div>
+    
         <?php
         }
     ?>
->>>>>>> 008426a58b29d99d7b7ad55d2d311c0dd8d072e8
+    <br><br>
 </body>
 </html>
 
